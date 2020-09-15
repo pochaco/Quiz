@@ -17,7 +17,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        resultLabel.text = String(correctAnswer)
+        resultLabel.text = "\(correctAnswer)問正解！"
     }
     
     @IBAction func back(){

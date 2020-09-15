@@ -24,12 +24,12 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        quizArray.append(["問題文1","選択肢1","選択肢2","選択肢3",2])
-        quizArray.append(["問題文2","選択肢1","選択肢2","選択肢3",1])
-        quizArray.append(["問題文3","選択肢1","選択肢2","選択肢3",3])
-        quizArray.append(["問題文4","選択肢1","選択肢2","選択肢3",3])
-        quizArray.append(["問題文5","選択肢1","選択肢2","選択肢3",2])
-        quizArray.append(["問題文6","選択肢1","選択肢2","選択肢3",1])
+        quizArray.append(["りんごの中で一番美味しいのは？","ふじ","王林","ジョナゴールド",2])
+        quizArray.append(["リンゴの色は？","赤","ピンク","オレンジ",1])
+        quizArray.append(["リンゴの味は？","酸っぱい","しょっぱい","甘い",3])
+        quizArray.append(["リンゴが似合うキャラクターは？","ドラえもん","ピカチュー","リューク",3])
+        quizArray.append(["りんごは英語で？","App","Apple","Banana",2])
+        quizArray.append(["りんごは？","おいしい","うまい","美味",1])
         
         //問題をシャッフルする　-> 出題分がランダムに
         quizArray.shuffle()

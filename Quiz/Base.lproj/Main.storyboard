@@ -40,12 +40,11 @@
                                     <segue destination="1g6-AH-2V5" kind="presentation" id="iod-lb-gKo"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eSw-PR-J1B">
-                                <rect key="frame" x="94" y="352" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="与えられた問題に3つの選択肢から答えを選んでください。　　　　　　　　　全ての問題に答え終わると、あなたの「りんご」レベルが表示されます。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eSw-PR-J1B">
+                                <rect key="frame" x="69" y="394" width="276" height="201"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -122,12 +121,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="N5f-xP-uzH">
-                                <rect key="frame" x="87" y="82" width="240" height="197"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="問題はここ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="knF-s3-l4O">
+                                <rect key="frame" x="87" y="79" width="240" height="223"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -137,7 +136,6 @@
                             <constraint firstItem="FsY-h6-dFX" firstAttribute="bottom" secondItem="gWP-Uk-gtT" secondAttribute="bottom" constant="40" id="M2W-T6-vko"/>
                             <constraint firstItem="FsY-h6-dFX" firstAttribute="bottom" secondItem="Lw1-6F-rCI" secondAttribute="bottom" constant="160" id="N4c-v2-c0Q"/>
                             <constraint firstItem="gWP-Uk-gtT" firstAttribute="centerX" secondItem="zh3-Jp-zMR" secondAttribute="centerX" id="rUq-2o-XZb"/>
-                            <constraint firstItem="N5f-xP-uzH" firstAttribute="centerX" secondItem="zh3-Jp-zMR" secondAttribute="centerX" id="sdf-ji-Fwx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FsY-h6-dFX"/>
                     </view>
@@ -145,7 +143,7 @@
                         <outlet property="choiceButton1" destination="3Tq-eQ-waQ" id="ITR-Do-oge"/>
                         <outlet property="choiceButton2" destination="wyW-81-QSE" id="F1H-nJ-hlk"/>
                         <outlet property="choiceButton3" destination="uzs-4L-ECz" id="HJ0-yi-TSp"/>
-                        <outlet property="quizTextView" destination="N5f-xP-uzH" id="Pkk-T8-uLc"/>
+                        <outlet property="quizTextView" destination="knF-s3-l4O" id="LKo-hI-fUb"/>
                         <segue destination="rXa-X0-6Oj" kind="presentation" identifier="toResultView" id="aHb-Jc-ui5"/>
                     </connections>
                 </viewController>
@@ -165,12 +163,6 @@
                                 <rect key="frame" x="20" y="150" width="384" height="420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUn-su-5mH">
-                                <rect key="frame" x="152" y="342" width="110.5" height="70"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sOM-Yk-Ecu">
                                 <rect key="frame" x="68" y="653" width="278" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -184,15 +176,22 @@
                                     <action selector="back" destination="rXa-X0-6Oj" eventType="touchUpInside" id="IQt-h3-gge"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="結果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjO-n6-p1D">
+                                <rect key="frame" x="162" y="350" width="90.5" height="54"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.99215686274509807" green="0.97647058823529409" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="MUn-su-5mH" firstAttribute="centerX" secondItem="Pcd-EY-0Dd" secondAttribute="centerX" id="0wZ-Ih-DGd"/>
+                            <constraint firstItem="xjO-n6-p1D" firstAttribute="centerX" secondItem="Pcd-EY-0Dd" secondAttribute="centerX" id="jAN-if-9dJ"/>
+                            <constraint firstItem="xjO-n6-p1D" firstAttribute="top" secondItem="EBQ-tc-NP3" secondAttribute="top" constant="350" id="oNQ-Dj-nyW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="EBQ-tc-NP3"/>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="MUn-su-5mH" id="HK2-pL-gxP"/>
+                        <outlet property="resultLabel" destination="xjO-n6-p1D" id="h9z-2V-AyF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7e-UF-0my" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
